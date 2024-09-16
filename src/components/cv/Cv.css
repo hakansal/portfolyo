@@ -1,0 +1,215 @@
+/* Genel stil (desktop için) */
+.pcv {
+    font-size: large;
+}
+  
+.hr{
+    border:none;
+    border-top: 2px  solid black;
+    width: 150px;
+    
+}
+.imglogos {
+    width: 100%;
+    height: 100%;
+    border-radius: 13%;
+}
+
+.logosdis {
+    width: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color:  #E7D2CC;
+    border-radius: 5%;
+}
+.logosdis-info{
+    padding: 4%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: start;
+    background-color: aqua;
+}
+
+
+.logos {
+    width: 100px;
+    height: 100px;
+    border-radius: 13%;
+    border: 1px solid #4d5555;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logos:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+ 
+
+.copminf {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 5px;
+  
+    background-color:#E7D2CC;
+    width: 200px;
+    border-radius: 5%;
+    border: 1px solid #4d5555;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.copminf:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.compdis {
+    display: flex;
+    flex-direction: row;
+     
+    width: 450px;
+    height: 400px;
+    gap: 10px;
+    border-radius: 5%;
+
+}
+ 
+.imgcomp{
+    width: 80px;
+    height: 80px;
+}
+.imgcv {
+    border: 1px solid #4d5555;
+    width: 100%;
+    height: 100%;
+}
+
+.homepagecv {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contentcv {
+    width: 500px;
+    height: 800px;
+    background-color:#EEEDE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4%;
+}
+
+.contentcv::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #4d5555;
+    transition: width 1s ease;
+    z-index: 1;
+}
+
+.contentcv::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: #4d5555;
+    transition: height 1s ease;
+    z-index: 1;
+}
+
+.contentcv:hover::after {
+    width: 100%;
+}
+
+.contentcv:hover::before {
+    height: 100%;
+}
+
+.custom-list {
+    list-style-type: none; /* Madde işaretlerini kaldırır */
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    text-align: left;
+}
+.p {
+    font-family: 'Arial', sans-serif; /* Daha modern bir yazı tipi */
+    font-size: 18px; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+    line-height: 1.6; /* Satır yüksekliği, daha okunabilir bir metin sağlar */
+    margin-bottom: 10px; /* Her paragrafın altına boşluk bırakır */
+}
+
+
+.custom-list li {
+    position: relative;
+    padding-left: 25px;  
+    margin-bottom: 10px;  
+    font-family: 'Arial', sans-serif; /* Daha modern bir yazı tipi */
+    font-size: 18px;
+    color: #333; /* Yazı rengini koyulaştırır */
+}
+
+.custom-list li::before {
+    content: "-";  
+    color: #1a1e20;  
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.custom-list li:hover {
+    color: #74aed4; /* Üzerine gelince yazı rengi değişir */
+    transition: color 0.3s ease; /* Yumuşak renk geçişi */
+}
+
+/* Tablet ve küçük ekranlar için */
+@media (max-width: 768px) {
+    .homepagecv {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contentcv {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 480px) {
+
+
+    .homepagecv {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contentcv {
+        width: 100%;
+        height: auto;
+    }
+}

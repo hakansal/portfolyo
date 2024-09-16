@@ -1,0 +1,109 @@
+/* Genel stil (desktop için) */
+.phk {
+    text-align: left;
+    padding-left: 4px;
+}
+.card-img-top{
+    border: 1px solid #4d5555;
+}
+
+.listhk {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card {
+   background-color: #e6e4dd;
+    border: none;
+    box-shadow: none;
+    width: 18rem; 
+    padding: 10px;
+}
+
+.homepagehk {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenthk {
+    width: 300px;
+    height: 600px;
+    background-color:#EEEDE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.contenthk::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #4d5555;
+    transition: width 1s ease;
+    z-index: 1;
+}
+
+.contenthk::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    left: 0;
+    top: 0;
+    background-color: #4d5555;
+    transition: height 1s ease;
+    z-index: 1;
+}
+
+.contenthk:hover::after {
+    width: 100%;
+}
+
+.contenthk:hover::before {
+    height: 100%;
+}
+
+/* Tablet ve küçük ekranlar için */
+@media (max-width: 768px) {
+    .homepagehk {
+        flex-direction: column;  
+        gap: 20px;  
+    }
+
+    .contenthk {
+        width: 90%;  
+        height: auto;  
+    }
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;  
+        padding: 5px;  
+    }
+
+    .homepagehk {
+        flex-direction: column;  
+        gap: 20px;  
+    }
+
+    .contenthk {
+        width: 100%;  
+        height: auto;  
+    }
+}

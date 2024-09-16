@@ -1,0 +1,39 @@
+.homemain{
+    margin-top: 50px;
+     width: 100vw;
+     height: 80vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+   gap:20px;
+  display: flex;
+  flex-direction: column;
+
+}
+.span{
+    color: #EEEDE7;
+     font-weight: 600;
+     
+}
+.h{ 
+    
+    font-size: 75px;
+    color: rgba(62, 69, 72, 0.8);
+    line-height: 0.9;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+  
+
+}
+.tanitim{
+    
+    font-size: 30px;
+    color: rgba(62, 69, 72, 0.8);
+    line-height: 0.9;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
+  
+}
