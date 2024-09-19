@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Cv.css";
 import roa from "./roa.jpg";
 import id3 from "./id3.jpg";
-import c from "./c.jpg";
 import flutter from "./flutter.jpg";
 import react from "./react.jpg";
 import javs from "./javs.jpg";
@@ -11,7 +10,7 @@ import html from "./html.jpg";
 import css from "./css.jpg";
 
 const Cv = () => {
-    const [visible, setVisible] = useState(false);
+   
 
 
 
@@ -77,7 +76,9 @@ const Cv = () => {
                         <div className="logosdis-info">
                             <h5>Javascript</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p  className="pa">Javascript ile node.js platformunda bir çok proje deneyimine sahip olup 
+                                ,projelerimde güçlü bir backend inşaa edebilmeyi,oluşturduğum web projelerinde iyi bir deneyime sahip olabildim.
+                            </p>
 
                         </div>
 
@@ -87,9 +88,11 @@ const Cv = () => {
                             <img className="imglogos" src={node} alt="C" />
                         </div>
                         <div className="logosdis-info">
-                            <h5>Javascript</h5>
+                            <h5>Node.js</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p  className="pa">node.js platformunda geliştirdiğim bir çok proje ile express.js ve mongoose gibi kütüphaneler'de ve 
+                                framework'lerde oldukça deneyim sahibi oldum.
+                            </p>
 
                         </div>
 
@@ -102,9 +105,11 @@ const Cv = () => {
                             <img className="imglogos" src={flutter} alt="Flutter" />
                         </div>
                         <div className="logosdis-info">
-                            <h5>Javascript</h5>
+                            <h5>Flutter</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p className="pa" > Flutter ile mobil programlama alandında geliştirmiş olduğum coin app uygulaması ile bu framework
+                                üzerinde mobil programlama alanında iyi bir giriş yakalamayı başardım.
+                            </p>
 
                         </div>
 
@@ -117,12 +122,14 @@ const Cv = () => {
                 <div className="contentcv"><h3 className="hvc"> frontend </h3>
                 <div className="logosdis">
                         <div className="logos">
-                            <img className="imglogos" src={html} alt="React" />
+                            <img className="imglogos" src={react} alt="React" />
                         </div>
                         <div className="logosdis-info">
-                            <h5>Javascript</h5>
+                            <h5>React</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p   className="pa"> React framework'u ile bir çok proje geliştirip oldukça deneyim kazandım.React içerisindeki Hook 
+                                ,component yapılarını kavrayıp responsive web geliştirme üzerine deneyim sahibi oldum.
+                            </p>
 
                         </div>
 
@@ -131,12 +138,14 @@ const Cv = () => {
 
                     <div className="logosdis">
                         <div className="logos">
-                            <img className="imglogos" src={react} alt="React" />
+                            <img className="imglogos" src={html} alt="React" />
                         </div>
                         <div className="logosdis-info">
-                            <h5>Javascript</h5>
+                            <h5>Html</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p className="pa">Geliştirdiğim REact projeleri ile html etiket diline hakım olup aynı zamanda
+                                jsx bileşenine'de uyum sağladım.Projelerimde sürekli kullanarak kendimi iyi bir konuma getirdim.
+                            </p>
 
                         </div>
 
@@ -146,9 +155,10 @@ const Cv = () => {
                             <img className="imglogos" src={css} alt="React" />
                         </div>
                         <div className="logosdis-info">
-                            <h5>Javascript</h5>
+                            <h5>Css</h5>
                             <hr className="hr" />
-                            <p className="p">javascript ile orta seviyede projeler ge</p>
+                            <p className="pa"> Projelerimdeki birçok jsx bileşenlerinin tasarımlarında css teknolojisini kullanarak yaratıcı tasarımlar ,animasyonlar ve geçiş
+                                efektleri kullanmayı ve uygulamayı deneyimleyebildim. </p>
 
                         </div>
 

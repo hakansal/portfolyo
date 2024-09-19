@@ -14,21 +14,23 @@ function App() {
     <div className="App">
 
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-            <Route path="/home" element={<><Home/></>}/>
-            <Route path="/ " element={<><Home/></>}/>
-            <Route path="/Cv" element={<> <Cv  /></>}/>
-            <Route path="/iletişim" element={<><Ilt/></>}/>
-            <Route path="/projelerim" element={<><Proje/></>}/>           
-            <Route path="/hakkımda" element={<><Hak/></>}/>
-            <Route path="/flutter" element={<><Flutter/></>}/>
-            <Route path="/todo" element={<><Todo/></>}/>
-            <Route path="/barkod" element={<><Barkod/></>}/>
+          <Route path="/" element={<><Home /></>} />
+
+          <Route path="/home" element={<><Home /></>} />
+          <Route path="/ " element={<><Home /></>} />
+          <Route path="/Cv" element={<> <Cv /></>} />
+          <Route path="/iletişim" element={<><Ilt /></>} />
+          <Route path="/projelerim" element={<><Proje /></>} />
+          <Route path="/hakkımda" element={<><Hak /></>} />
+          <Route path="/flutter" element={<><Flutter /></>} />
+          <Route path="/todo" element={<><Todo /></>} />
+          <Route path="/barkod" element={<><Barkod /></>} />
 
         </Routes>
       </Router>
-      
+
     </div>
   );
 }

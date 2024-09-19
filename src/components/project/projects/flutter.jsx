@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
-import todo from "./codes";
+ 
 import sun from "./img/sun.jpg"
 import id3 from "./img/id3.jpg"
 import javs from "./img/javs.jpg"

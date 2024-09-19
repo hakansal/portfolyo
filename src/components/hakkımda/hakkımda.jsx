@@ -12,7 +12,7 @@ const Hak = () => {
 
             <div className="contenthk">
                 <div class="card"  >
-                    <img src={ben} classname="card-img-top" />
+                    <img src={ben} classname="card-img-top" alt="ben"/>
                     <div >
                         <h5 class="card-title">Hakan şal</h5>
                         <p class="card-text">Bilgisayar mühendisi

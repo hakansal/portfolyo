@@ -13,11 +13,12 @@
     width: 100%;
     height: 100%;
     border-radius: 13%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logosdis {
     width: 500px;
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: row;
     height: 200px;
@@ -31,9 +32,13 @@
     flex-direction: column;
     height: 200px;
     align-items: start;
-    background-color: aqua;
+  
 }
-
+.pa{
+   text-align:left;
+   color: #333; 
+   line-height: 1.6;
+}
 
 .logos {
     width: 100px;
@@ -113,6 +118,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 4%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contentcv::after {
@@ -148,18 +154,18 @@
 }
 
 .custom-list {
-    list-style-type: none; /* Madde işaretlerini kaldırır */
+    list-style-type: none;  
     padding: 0;
     margin: 0;
     padding-left: 5px;
     text-align: left;
 }
 .p {
-    font-family: 'Arial', sans-serif; /* Daha modern bir yazı tipi */
-    font-size: 18px; /* Yazı boyutu */
-    color: #333; /* Yazı rengi */
-    line-height: 1.6; /* Satır yüksekliği, daha okunabilir bir metin sağlar */
-    margin-bottom: 10px; /* Her paragrafın altına boşluk bırakır */
+    font-family: 'Arial', sans-serif;  
+    font-size: 18px;  
+    color: #333; 
+    line-height: 1.6;  
+    margin-bottom: 10px;  
 }
 
 
@@ -167,9 +173,9 @@
     position: relative;
     padding-left: 25px;  
     margin-bottom: 10px;  
-    font-family: 'Arial', sans-serif; /* Daha modern bir yazı tipi */
+    font-family: 'Arial', sans-serif;  
     font-size: 18px;
-    color: #333; /* Yazı rengini koyulaştırır */
+    color: #333;  
 }
 
 .custom-list li::before {
@@ -182,8 +188,8 @@
 }
 
 .custom-list li:hover {
-    color: #74aed4; /* Üzerine gelince yazı rengi değişir */
-    transition: color 0.3s ease; /* Yumuşak renk geçişi */
+    color: #74aed4;  
+    transition: color 0.3s ease;  
 }
 
 /* Tablet ve küçük ekranlar için */
