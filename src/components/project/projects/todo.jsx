@@ -113,9 +113,9 @@ const Todo = () => {
 
                         </div>
                         <div className="codeinf">
-                        <p className=" pbottom p"> {codesinfo[index]}</p>
-                         
-                    </div>
+                            <p className=" pbottom p"> {codesinfo[index]}</p>
+
+                        </div>
                     </div>
                     < div className="projectcode">
                         <div className="fotoslider">
@@ -136,31 +136,67 @@ const Todo = () => {
                     </div>
                 </div>
                 <div className="projedetay">
-                    <h4>proje açıklama</h4>
-                    <hr className="hr"></hr>
-                    <p>proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
+                    <h1 className="newh1"> To Do App</h1>
+
+                    <p className="newp">proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
 
                 </div>
 
 
 
                 <div className="logolar">
+
+                <div>
                     <button className="icon-button icon-buttonlogo">
-                        <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
-                            <i className="fab fa-github">  
+                        <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                            <i className="fab fa-github">
                             </i>
-                       
+
                         </a>
                     </button>
+
+                    <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                        <i className="fab  ">
+                            flutter-app
+
+
+                        </i>
+
+                    </a>
+                </div>
+
+                <div>
+                    <button className="icon-button icon-buttonlogo">
+
+                        <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+                            <i className="fab fa-github">
+                            </i>
+
+                        </a>
+                    </button>
+
                     <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
-                            <i className="fab  ">  
+                        <i className="fab  ">
                             todo-app-mern-stack
 
-                            </i>
-                       
-                        </a> 
- 
+                        </i>
+
+                    </a>
                 </div>
+                <div>
+                    <button className="icon-button icon-buttonlogo">
+                        <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+                            <i className="fab fa-github">
+                            </i>
+                        </a>
+                    </button>
+                    <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+                        <i className="fab  ">
+                            mern-barkodv1-frontend
+                        </i>
+                    </a>
+                </div>
+            </div>
 
 
 

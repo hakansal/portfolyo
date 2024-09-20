@@ -14,7 +14,9 @@
     color: rgba(62, 69, 72, 0.8);  
       
 }
-
+.aa{
+    font-size: large;
+}
 .logo-p::after {
     content: "";  
     display: block;  

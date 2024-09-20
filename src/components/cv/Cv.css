@@ -193,6 +193,17 @@
 }
 
 /* Tablet ve küçük ekranlar için */
+@media (max-width: 1200px) {
+    .homepagecv {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contentcv {
+        width: 90%;
+        height: auto;
+    }
+}
 @media (max-width: 768px) {
     .homepagecv {
         flex-direction: column;

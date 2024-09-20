@@ -88,11 +88,7 @@ const Flutter = () => {
     return <div>
 
         <div className="mainp">
-            <h1> <i className="fab  ">
-                Flutter app
-
-
-            </i></h1>
+            
 
 
             <div className="blocks">
@@ -144,32 +140,67 @@ const Flutter = () => {
 
 
             <div className="projedetay">
-                <h4>proje açıklama</h4>
-                <hr className="hr"></hr>
-                <p>proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
+                <h1 className="newh1">Flutter Coin App</h1>
+                
+                <p className="newp">proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
 
             </div>
 
 
 
             <div className="logolar">
-                <button className="icon-button icon-buttonlogo">
-                    <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
-                        <i className="fab fa-github">
-                        </i>
 
-                    </a>
-                </button>
-                <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
-                    <i className="fab  ">
-                        flutter-app
+<div>
+    <button className="icon-button icon-buttonlogo">
+        <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+            <i className="fab fa-github">
+            </i>
+
+        </a>
+    </button>
+
+    <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+        <i className="fab  ">
+            flutter-app
 
 
-                    </i>
+        </i>
 
-                </a>
+    </a>
+</div>
 
-            </div>
+<div>
+    <button className="icon-button icon-buttonlogo">
+
+        <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+            <i className="fab fa-github">
+            </i>
+
+        </a>
+    </button>
+
+    <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+        <i className="fab  ">
+            todo-app-mern-stack
+
+        </i>
+
+    </a>
+</div>
+<div>
+    <button className="icon-button icon-buttonlogo">
+        <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+            <i className="fab fa-github">
+            </i>
+        </a>
+    </button>
+    <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+        <i className="fab  ">
+            mern-barkodv1-frontend
+        </i>
+    </a>
+</div>
+</div>
 
 
 

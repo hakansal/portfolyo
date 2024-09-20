@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
- 
+
 import sun from "./img/sun.jpg"
 import id3 from "./img/id3.jpg"
 import javs from "./img/javs.jpg"
@@ -90,10 +90,7 @@ const Barkod = () => {
     return <div>
 
         <div className="mainp">
-            <h1>  <i className="fab  ">
-                Barkod v1
 
-            </i></h1>
 
 
             <div className="blocks">
@@ -119,7 +116,7 @@ const Barkod = () => {
                     </div>
                     <div className="codeinf">
                         <p className=" pbottom p"> {codesinfo[index]}</p>
-                         
+
                     </div>
                 </div>
                 < div className="projectcode">
@@ -143,26 +140,66 @@ const Barkod = () => {
 
 
             <div className="projedetay">
-                <h4>proje açıklama</h4>
-                <hr className="hr"></hr>
-                <p>proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
+                <h1 className="newh1"> Barkod V1</h1>
+
+                <p className="newp">proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
 
             </div>
 
 
 
             <div className="logolar">
-                <button className="icon-button icon-buttonlogo">
+
+                <div>
+                    <button className="icon-button icon-buttonlogo">
+                        <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                            <i className="fab fa-github">
+                            </i>
+
+                        </a>
+                    </button>
+
+                    <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                        <i className="fab  ">
+                            flutter-app
+
+
+                        </i>
+
+                    </a>
+                </div>
+
+                <div>
+                    <button className="icon-button icon-buttonlogo">
+
+                        <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+                            <i className="fab fa-github">
+                            </i>
+
+                        </a>
+                    </button>
+
+                    <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+                        <i className="fab  ">
+                            todo-app-mern-stack
+
+                        </i>
+
+                    </a>
+                </div>
+                <div>
+                    <button className="icon-button icon-buttonlogo">
+                        <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+                            <i className="fab fa-github">
+                            </i>
+                        </a>
+                    </button>
                     <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
-                        <i className="fab fa-github">
+                        <i className="fab  ">
+                            mern-barkodv1-frontend
                         </i>
                     </a>
-                </button>
-                <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
-                    <i className="fab  ">
-                        mern-barkodv1-frontend
-                    </i>
-                </a>
+                </div>
             </div>
 
 

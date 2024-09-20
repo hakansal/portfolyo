@@ -15,11 +15,19 @@
 }
 
 .card {
-   background-color: #e6e4dd;
+    
+    background-color: #e6e4dd;
     border: none;
     box-shadow: none;
-    width: 18rem; 
+    width: 22rem; 
     padding: 10px;
+    box-shadow: 7px 8px 8px rgba(14, 13, 13, 0.1);
+    border: 1px solid #c2c7c7;
+    transition :transform 0.3s ease ;
+}
+.card:hover{
+    transform: translate(5px,5px);
+    
 }
 
 .homepagehk {
@@ -32,7 +40,7 @@
 }
 
 .contenthk {
-    width: 300px;
+    width: 500px;
     height: 600px;
     background-color:#EEEDE7;
     display: flex;
@@ -42,7 +50,7 @@
     position: relative;
     flex-direction: column;
     gap: 20px;
-    
+    border: 1px solid #4d5555;
 }
 
 .contenthk::after {
@@ -85,8 +93,8 @@
     }
 
     .contenthk {
-        width: 90%;  
-        height: auto;  
+        width: 400px;  
+        height: 600px;  
     }
 }
 
