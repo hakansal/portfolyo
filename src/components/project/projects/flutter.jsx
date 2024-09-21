@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
  
-import sun from "./img/sun.jpg"
-import id3 from "./img/id3.jpg"
-import javs from "./img/javs.jpg"
+import flutter1 from "./img/flutter1.png"
+import flutter2 from "./img/flutter2.jpg"
+ 
 import Codes from "./codes";
 
 import "./projects.css"
 
 
 const Flutter = () => {
-    const pics = [javs, id3, sun];
+    const pics = [flutter1, flutter2];
     const [indeximg, setindeximg] = useState(0);
-    const codes = [Codes.flutter.screenmain, Codes.flutter.model];
+    const codes = [Codes.flutter.screenmain, Codes.flutter.model,Codes.flutter.detailscreen];
     const [index, setindex] = useState(0);
     const [codegecis, setcodegecis] = useState("fade-in");
     const [imggecis, setimggecis] = useState("fade-in");
-    const codesinfo = [" Screen main", "Model", "Crud (create)"];
+    const codesinfo = [" Screen main", "Model", " Detail screen"];
 
     const imgileri = () => {
         setimggecis("fade-out");
@@ -26,7 +26,7 @@ const Flutter = () => {
             if (indeximg < pics.length - 1) {
                 const swap = indeximg + 1;
                 setindeximg(swap)
-            } else if (indeximg == pics.length - 1) {
+            } else if (indeximg === pics.length - 1) {
                 setindeximg(0)
             }
             setimggecis("fade-in")
@@ -41,7 +41,7 @@ const Flutter = () => {
                 const swap = indeximg - 1;
                 setindeximg(swap);
             }
-            else if (indeximg == 0) {
+            else if (indeximg === 0) {
                 const swap = pics.length - 1;
                 setindeximg(swap);
             }
@@ -59,7 +59,7 @@ const Flutter = () => {
             if (index < codes.length - 1) {
                 const swap = index + 1;
                 setindex(swap)
-            } else if (index == codes.length - 1) {
+            } else if (index === codes.length - 1) {
                 setindex(0)
             }
             setcodegecis("fade-in");
@@ -76,7 +76,7 @@ const Flutter = () => {
                 const swap = index - 1;
                 setindex(swap);
             }
-            else if (index == 0) {
+            else if (index === 0) {
                 setindex(codes.length - 1);
             }
             setcodegecis("fade-in");
@@ -142,7 +142,9 @@ const Flutter = () => {
             <div className="projedetay">
                 <h1 className="newh1">Flutter Coin App</h1>
                 
-                <p className="newp">proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
+                <p className="newp"> Projem, bir Flutter mobil uygulamasıdır. Bu projede, bir API'dan JSON formatında dönen güncel kripto paralarının verilerini alarak, oluşturduğum bir model yapısı ile bu verileri map'leyip bir liste şeklinde gösteren bir ekran tasarladım. Kullanıcılar, kripto paraların isimlerini ve güncel değerlerini görebiliyorlar.
+
+Daha sonra bu projede, kullanıcı deneyimini artırmak için liste öğelerine dokunarak daha fazla detay gösterecek bir detay sayfası eklemeyi planlıyorum. Ayrıca, verilerin düzenli olarak güncellenmesini sağlamak için bir zamanlayıcı (timer) kullanarak belirli aralıklarla API'dan veri çekmeyi de düşünüyorum. Böylece kullanıcılar, sürekli güncel bilgilere ulaşabilecekler. </p>
 
             </div>
 

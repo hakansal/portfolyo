@@ -19,7 +19,7 @@ const Proje = () => {
                 </div>
                 <h2>Todo Web app</h2>
                 <button className="icon-button" href="/flutter">
-                <a href="/flutter" className="aa">incele </a>
+                <a href="/todo" className="aa">incele </a>
 
                 </button>
 
@@ -32,7 +32,7 @@ const Proje = () => {
                 <h2>Barkod v1</h2>
 
                 <button className="icon-button"  >
-                <a href="/flutter" className="aa">incele </a>
+                <a href="/barkod" className="aa">incele </a>
 
                 </button>
             </div>

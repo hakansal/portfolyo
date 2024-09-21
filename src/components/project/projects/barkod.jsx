@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-import sun from "./img/sun.jpg"
-import id3 from "./img/id3.jpg"
-import javs from "./img/javs.jpg"
+import barkod1 from "./img/barkod1.png"
+import barkod2 from "./img/barkod2.png"
+ 
 import "./projects.css"
 import Codes from "./codes";
 
 const Barkod = () => {
-    const pics = [javs, id3, sun];
+    const pics = [barkod1,barkod2];
     const [indeximg, setindeximg] = useState(0);
-    const codes = [Codes.barkodv1.backendserver, Codes.barkodv1.app, Codes.barkodv1.crudekle];
+    const codes = [Codes.barkodv1.backendserver, Codes.barkodv1.app, Codes.barkodv1.crudekle ];
     const codesinfo = ["Backend Server", "App.js", "Crud (create)"];
-
+    const fotoinfo=["ürün ekleme sayfası","navbar ",]
     const [index, setindex] = useState(0);
     const [codegecis, setcodegecis] = useState("fade-in");
     const [imggecis, setimggecis] = useState("fade-in");
@@ -26,7 +26,7 @@ const Barkod = () => {
             if (indeximg < pics.length - 1) {
                 const swap = indeximg + 1;
                 setindeximg(swap)
-            } else if (indeximg == pics.length - 1) {
+            } else if (indeximg === pics.length - 1) {
                 setindeximg(0)
             }
             setimggecis("fade-in")
@@ -41,7 +41,7 @@ const Barkod = () => {
                 const swap = indeximg - 1;
                 setindeximg(swap);
             }
-            else if (indeximg == 0) {
+            else if (indeximg ===0) {
                 const swap = pics.length - 1;
                 setindeximg(swap);
             }
@@ -59,7 +59,7 @@ const Barkod = () => {
             if (index < codes.length - 1) {
                 const swap = index + 1;
                 setindex(swap)
-            } else if (index == codes.length - 1) {
+            } else if (index === codes.length - 1) {
                 setindex(0)
             }
             setcodegecis("fade-in");
@@ -76,7 +76,7 @@ const Barkod = () => {
                 const swap = index - 1;
                 setindex(swap);
             }
-            else if (index == 0) {
+            else if (index === 0) {
                 setindex(codes.length - 1);
             }
             setcodegecis("fade-in");
@@ -126,7 +126,7 @@ const Barkod = () => {
                         </button>
                         <div className="fotodiv">
                             <div  >
-                                <img src={pics[indeximg]} className={`imgfoto ${imggecis}`} alt="Slider Image" />
+                                <img src={pics[indeximg]} className={`imgfoto ${imggecis}`} alt=" pr  " />
                             </div></div>
 
 
@@ -134,6 +134,10 @@ const Barkod = () => {
                             <i className="fas fa-arrow-right"></i>
                         </button>
                     </div>
+                    <div className="codeinf">
+                            <p className=" pbottom p"> {fotoinfo[indeximg]}</p>
+
+                        </div>
 
                 </div>
             </div>
@@ -142,7 +146,9 @@ const Barkod = () => {
             <div className="projedetay">
                 <h1 className="newh1"> Barkod V1</h1>
 
-                <p className="newp">proje ile ilgili metin açıklam neler yaptıkljfdfsljfrfghghgr</p>
+                <p className="newp">Projem, MERN stack yapısıyla geliştirilmiş bir barkod takip sistemidir. Backend kısmında, MongoDB ile veri tabanında tablolar oluşturarak bu tablolar üzerinde CRUD (Create, Read, Update, Delete) işlemleri gerçekleştiriyorum. Mongoose kütüphanesini kullanarak MongoDB ile etkileşimli, şemaya dayalı veri modellemeleri yapıyorum. Ayrıca, Express.js framework'ü ile çeşitli API uç noktaları oluşturarak bu veritabanı işlemlerine erişim sağlıyorum.
+
+Frontend kısmında ise React kullanarak kullanıcı arayüzünü geliştiriyorum. Backend'de oluşturduğum API'lara fetch metodu ile istekler göndererek verileri çekiyorum ve bu verileri React bileşenlerinde dinamik olarak görüntülüyorum. Bu yapıyla kullanıcılar, barkod verilerini sisteme ekleyip güncelleyebiliyor, veritabanında bulunan bilgileri görüntüleyebiliyor ve düzenleyebiliyorlar.</p>
 
             </div>
 
@@ -152,14 +158,14 @@ const Barkod = () => {
 
                 <div>
                     <button className="icon-button icon-buttonlogo">
-                        <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                        <a href="https://github.com/hakansal/flutter-app" target=" "  >
                             <i className="fab fa-github">
                             </i>
 
                         </a>
                     </button>
 
-                    <a href="https://github.com/hakansal/flutter-app" target="_blank"  >
+                    <a href="https://github.com/hakansal/flutter-app" target=" "  >
                         <i className="fab  ">
                             flutter-app
 
@@ -172,14 +178,14 @@ const Barkod = () => {
                 <div>
                     <button className="icon-button icon-buttonlogo">
 
-                        <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+                        <a href="https://github.com/hakansal/todo-app-mern-stack" target=" "  >
                             <i className="fab fa-github">
                             </i>
 
                         </a>
                     </button>
 
-                    <a href="https://github.com/hakansal/todo-app-mern-stack" target="_blank"  >
+                    <a href="https://github.com/hakansal/todo-app-mern-stack" target=" "  >
                         <i className="fab  ">
                             todo-app-mern-stack
 
@@ -189,12 +195,12 @@ const Barkod = () => {
                 </div>
                 <div>
                     <button className="icon-button icon-buttonlogo">
-                        <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+                        <a href="https://github.com/hakansal/mern-barkodv1-frontend" target=" "  >
                             <i className="fab fa-github">
                             </i>
                         </a>
                     </button>
-                    <a href="https://github.com/hakansal/mern-barkodv1-frontend" target="_blank"  >
+                    <a href="https://github.com/hakansal/mern-barkodv1-frontend" target=" "  >
                         <i className="fab  ">
                             mern-barkodv1-frontend
                         </i>
